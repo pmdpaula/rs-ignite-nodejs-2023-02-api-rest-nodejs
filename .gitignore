@@ -1,7 +1,8 @@
 node_modules
 build
-./tmp/app.db
-
+tmp
+.npmrc
+db/app.db
 
 # Environment variables
 .env
