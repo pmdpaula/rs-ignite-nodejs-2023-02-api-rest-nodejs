@@ -1,17 +1,55 @@
 # Projeto do módulo API Rest e Rotas HTTP - Node.JS - Rocketseat
 
+## 🚀 Início e lint
 
-## :package: Pacotes
+- typescript, @types/node
+
+```bash
+yarn add typescript @types/node -D
+npx tsc --init
+```
+
+Alterasmos o `target` no arquivo `tsconfig.json` para `es2020` e adicionamos a propriedade `module` com o valor `ESNext`.
+
+```json
+{
+  "target": "es2020",
+  "module": "ESNext",
+  "moduleResolution": "node",
+}
+```
+
+- tsup (bundler)
+- tsx
+- eslint
+
+```bash
+yarn create @eslint/config@latest
+```
+
+Isto criará um arquivo `eslint.config.js` na raiz do projeto, que aqui foi renomeado para `eslint.config.mjs`.
+
+
+- prettier
+
+```bash
+yarn add prettier eslint-config-prettier -D
+```
+
+
+## 📦 Pacotes
 
 - fastify (framework)
+- dotenv (variáveis de ambiente)
 - knex (query builder)
 - sqlite3 (banco de dados)
-- dotenv (variáveis de ambiente)
 - zod (validação de dados)
 - @fastify/cookie (cookies)
+- vitest (testes)
+- supertest, @types/supertest (testes)
 
 
-## Banco de dados
+## 🛢️ Banco de dados
 
 Inicialização do banco de dados:
 

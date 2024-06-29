@@ -3,6 +3,8 @@ build
 tmp
 .npmrc
 db/app.db
+db/test.db
 
 # Environment variables
 .env
+.env.test

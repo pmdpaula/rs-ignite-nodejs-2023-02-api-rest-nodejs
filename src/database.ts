@@ -1,7 +1,7 @@
-import { Knex, knex as setupKnex } from "knex";
 import { env } from "./env";
+import { Knex, knex as setupKnex } from "knex";
 
-export const config: Knex.Config = {
+export const knexConfig: Knex.Config = {
   client: "sqlite",
   connection: {
     filename: env.DATABASE_URL,
@@ -13,4 +13,4 @@ export const config: Knex.Config = {
   },
 };
 
-export const knex = setupKnex(config);
+export const knex = setupKnex(knexConfig);
